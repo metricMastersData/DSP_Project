@@ -16,8 +16,8 @@ The "Flight Price Prediction" dataset is sourced from Kaggle and contains histor
 
 #### Features/Columns in the Dataset
 The dataset contains the following features:
-- `source`: The departure airport (categorical, e.g., 'New York', 'Los Angeles').
-- `destination`: The arrival airport (categorical, e.g., 'London', 'Paris').
+- `IATA source`: The departure airport IATA Code (categorical, e.g., 'New York', 'Los Angeles').
+- `IATA destination`: The arrival airport IATA Code (categorical, e.g., 'London', 'Paris').
 - `airlineName`: The airline company operating the flight (categorical, e.g., 'Delta', 'American Airlines').
 - `flightDate`: The date the journey (date).
 - `duration`: The duration of the flight in hours (numerical, float).
@@ -31,6 +31,7 @@ The "Airport" dataset is sourced from Kaggle and contains the city, state, count
 
 #### Features/Columns in the Dataset
 This dataset contains following feautures:
+- `IATA`: The IATA code of the airport (categorical, e.g., 'Denver Inti', 'Adams').
 - `AIRPORT`: The name of the airport (categorical, e.g., 'Denver Inti', 'Adams').
 - `CITY`: The city of the airport (categorical, e.g., 'Denver', 'Little Rock').
 -  `STATE`: The state of the airport (categorical, e.g., 'CO', 'AR').
