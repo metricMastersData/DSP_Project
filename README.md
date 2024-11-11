@@ -12,5 +12,5 @@ The goal of this project is to predict flight ticket prices based on various fac
 ## Datasets:
 ### FlightFarePrediction_data.csv
 
-### airports.csv
+### Firports.csv
 
