@@ -27,6 +27,9 @@ The dataset contains the following features:
 - `noOfStops`: Number of stopovers during the flight (numerical, integer).
 
 ### Airports.csv
+The "Airport" dataset is sourced from Kaggle and contains the city, state, country, longitude and latitude data of airports.
+
+#### Features/Columns in the Dataset
 This dataset contains following feautures:
 - `AIRPORT`: The name of the airport (categorical, e.g., 'Denver Inti', 'Adams').
 - `CITY`: The city of the airport (categorical, e.g., 'Denver', 'Little Rock').
