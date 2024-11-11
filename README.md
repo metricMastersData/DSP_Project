@@ -21,7 +21,8 @@ The dataset contains the following features:
 - `airlineName`: The airline company operating the flight (categorical, e.g., 'Delta', 'American Airlines').
 - `flightDate`: The date the journey (date).
 - `duration`: The duration of the flight in hours (numerical, float).
-- `price`: The ticket price for the flight (numerical, float).
+- `baseFare`: The basic ticket price for the flight (numerical, float).
+- 'totalFare': The total ticket price for the flight (numerical, float).
 - `isBasicEconomy`: The class of the flight (categorical, e.g., 'Economy', 'Business').
 - `noOfStops`: Number of stopovers during the flight (numerical, integer).
 
