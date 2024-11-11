@@ -27,4 +27,12 @@ The dataset contains the following features:
 - `noOfStops`: Number of stopovers during the flight (numerical, integer).
 
 ### Airports.csv
+This dataset contains following feautures:
+- `AIRPORT`: The name of the airport (categorical, e.g., 'Denver Inti', 'Adams').
+- `CITY`: The city of the airport (categorical, e.g., 'Denver', 'Little Rock').
+-  `STATE`: The state of the airport (categorical, e.g., 'CO', 'AR').
+- `COUNTRY`: The Country of the airport (categorical, e.g., 'USA', 'USA').
+- `LATITUDE`: The Latitude of the airport (numerical, float).
+- `LONGITUDE`: The Longitude of the airport (numerical, float).
+
 
