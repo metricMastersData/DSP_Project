@@ -16,16 +16,33 @@ The "Flight Price Prediction" dataset is sourced from Kaggle and contains histor
 
 #### Features/Columns in the Dataset
 The dataset contains the following features:
-- `startingAirport`: The departure airport (categorical, e.g., 'New York', 'Los Angeles').
-- `destinationAirport`: The arrival airport (categorical, e.g., 'London', 'Paris').
-- `airlineName`: The airline company operating the flight (categorical, e.g., 'Delta', 'American Airlines').
-- `flightDate`: The date the journey (date).
-- `duration`: The duration of the flight in hours (numerical, float).
-- `baseFare`: The basic ticket price for the flight (numerical, float).
-- `totalFare`: The total ticket price for the flight (numerical, float).
-- `isBasicEconomy`: The class of the flight (categorical, e.g., 1, 0).
-- `isRefundable`: Whether the fare is refundable or not (categorical, e.g., 1,0).
-- `noOfStops`: Number of stopovers during the flight (numerical, integer).
+
+- `searchDate`: Date when the flight search was made.
+- `flightDate`: Date of the flight.
+- `startingAirport`: The departure airport
+- `destinationAirport`: The arrival airport
+- `fareBasisCode`: Code indicating fare rules.
+- `travelDuration`:  Total time of the flight.
+- `elapsedDays`: Days since flight search.
+- `isBasicEconomy`: Indicates if it's a basic economy ticket.
+- `isRefundable`: Indicates if the ticket is refundable.
+- `isNonStop`: Indicates if the flight is nonstop.
+- `baseFare`: The base price of the ticket.
+- `totalFare`: Total price including taxes and fees.
+- `seatsRemaining`: Number of available seats.
+- `totalTravelDistance`: Total distance of the flight.
+- `segmentsDepartureTimeEpochSeconds`: Departure time in epoch seconds.
+- `segmentsDepartureTimeRaw`: Raw departure time.
+- `segmentsArrivalTimeEpochSeconds`: Arrival time in epoch seconds.
+- `segmentsArrivalTimeRaw`: Raw arrival time.
+- `segmentsArrivalAirportCode`: Arrival airport code.
+- `segmentsDepartureAirportCode`: Departure airport code.
+- `segmentsAirlineName`: Airline name for the flight segment.
+- `segmentsAirlineCode`: Airline code for the flight segment.
+- `segmentsEquipmentDescription`: Aircraft description.
+- `segmentsDurationInSeconds`: Duration of the flight segment in seconds.
+- `segmentsDistance`: Distance of the flight segment.
+- `segmentsCabinCode`: Cabin class code for the flight segment.
 
 ### Airports.csv
 The "Airport" dataset is sourced from Kaggle and contains the city, state, country, longitude and latitude data of airports.
