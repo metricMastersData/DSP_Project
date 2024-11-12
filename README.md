@@ -23,7 +23,8 @@ The dataset contains the following features:
 - `duration`: The duration of the flight in hours (numerical, float).
 - `baseFare`: The basic ticket price for the flight (numerical, float).
 - `totalFare`: The total ticket price for the flight (numerical, float).
-- `isBasicEconomy`: The class of the flight (categorical, e.g., 'Economy', 'Business').
+- `isBasicEconomy`: The class of the flight (categorical, e.g., 1, 0).
+- `isRefundable`: Whether the fare is refundable or not (categorical, e.g., 1,0).
 - `noOfStops`: Number of stopovers during the flight (numerical, integer).
 
 ### Airports.csv
