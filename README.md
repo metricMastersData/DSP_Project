@@ -49,12 +49,12 @@ The "Airport" dataset is sourced from Kaggle and contains the city, state, count
 
 #### Features/Columns in the Dataset
 This dataset contains following feautures:
-- `IATA`: The IATA code of the airport (categorical, e.g., 'Denver Inti', 'Adams').
-- `AIRPORT`: The name of the airport (categorical, e.g., 'Denver Inti', 'Adams').
-- `CITY`: The city of the airport (categorical, e.g., 'Denver', 'Little Rock').
--  `STATE`: The state of the airport (categorical, e.g., 'CO', 'AR').
-- `COUNTRY`: The Country of the airport (categorical, e.g., 'USA', 'USA').
-- `LATITUDE`: The Latitude of the airport (numerical, float).
-- `LONGITUDE`: The Longitude of the airport (numerical, float).
+- `IATA`: The IATA code of the airport
+- `AIRPORT`: The name of the airport
+- `CITY`: The city of the airport
+-  `STATE`: The state of the airport
+- `COUNTRY`: The Country of the airport
+- `LATITUDE`: The Latitude of the airport
+- `LONGITUDE`: The Longitude of the airport
 
 *Raw csv datasets available in **master** branch.
