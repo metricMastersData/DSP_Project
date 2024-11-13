@@ -9,7 +9,6 @@ sklearn.model_selection
 sklearn.linear_model
 sklearn.ensemble
 xgboost
-sklearn.metrics (repeated)
 pyspark.sql.functions
 pyspark.sql.types
 datetime
