@@ -7,7 +7,7 @@ Taru Kaushik, tarukaushik@iisc.ac.in​
 Yuvasree Pamujula, yuvasreep@iisc.ac.in
 
 ## Problem Statement:
-The goal of this project is to predict flight ticket prices based on various factors such as departure and arrival locations, time of booking, airline, flight duration and other relevant features. Predicting flight prices will help users make informed decisions about when to book flights to get the best prices.
+The goal of this project is to predict flight ticket prices based on various factors such as departure and arrival locations, time of booking, airline, flight duration and other relevant features. Predicting flight prices will help users in making informed decisions about when to book flights to get the best prices.
 
 ## Datasets:
 
@@ -56,5 +56,3 @@ This dataset contains following feautures:
 - `COUNTRY`: The Country of the airport (categorical, e.g., 'USA', 'USA').
 - `LATITUDE`: The Latitude of the airport (numerical, float).
 - `LONGITUDE`: The Longitude of the airport (numerical, float).
-
-
