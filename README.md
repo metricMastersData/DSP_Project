@@ -57,4 +57,4 @@ This dataset contains following feautures:
 - `LATITUDE`: The Latitude of the airport (numerical, float).
 - `LONGITUDE`: The Longitude of the airport (numerical, float).
 
-*Raw csv datasets csv available in **master** branch.
+*Raw csv datasets available in **master** branch.
