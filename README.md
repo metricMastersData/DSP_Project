@@ -57,45 +57,45 @@ This dataset contains following feautures:
 - `LATITUDE`: The Latitude of the airport
 - `LONGITUDE`: The Longitude of the airport
 
-# 1. Introduction
+## 1. Introduction
 This project aims to predict flight fares using a comprehensive dataset. The process involves data cleaning, preprocessing, exploratory data analysis (EDA), feature engineering, and model training and evaluation.
 
-# 2. Data Cleaning
+## 2. Data Cleaning
 It involves specific Column Extraction, Duplicate data Removal and handling Missing numerical Values through median imputation (numerical) and mode imputation (categorical).
 
-# 3. Data Preprocessing
-  # . Date and Time Conversion
+## 3. Data Preprocessing
+  ### . Date and Time Conversion
   - `flightDate` is converted to datetime format.
   - `travelDuration` is transformed from ISO 8601 format to total minutes.
- # . Column Splitting and Transformation
+ ### . Column Splitting and Transformation
    - `segmentsAirlineName` is split to create `airlineName`
    - Number of stops is calculated.
    - Boolean columns are converted to integers.
    - `flightDate` is split into month, day, and year columns.
- # . Mapping and Extraction
+ ### . Mapping and Extraction
    - Airport codes are mapped to names and cities using a dictionary.
    - First and last segments of arrival and departure times are extracted.
    - Epoch time is converted to datetime for detailed arrival and departure information.
-# 4. Exploratory Data Analysis (EDA)
-  # . Visualizations
+## 4. Exploratory Data Analysis (EDA)
+  ### . Visualizations
      - Histogram of total fares.
      - Bar chart of total fares by airline.
      - Scatter plot of total fare vs. travel duration.
      - Pie chart of the number of stops.
      - Bar charts of flight frequencies by origin and destination cities.
-# 5. Feature Engineering
-  # . New Features
+## 5. Feature Engineering
+  ### . New Features
       - Time of day classification for arrivals and departures.
       - Season determination based on month.
       - Combined airport and city names.
-  # . Optimization:
+  ### . Optimization:
       - Data types are optimized for memory usage.
       - Relevant columns are selected for prediction.
       - Categorical columns are encoded using one-hot encoding.
       - Additional Visualizations:
       - Pie charts of departure and arrival times by time of day.
       - Heatmap of the correlation matrix for numerical features.
-# 6. Model Training & Evaluation
+### 6. Model Training & Evaluation
 Implemented XGBoost with hyper parameter tuning and cross validation.
 
       
