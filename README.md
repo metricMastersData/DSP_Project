@@ -96,10 +96,7 @@ It involves specific Column Extraction, Duplicate data Removal and handling Miss
       - Pie charts of departure and arrival times by time of day.
       - Heatmap of the correlation matrix for numerical features.
 # 6. Model Training & Evaluation
-# Model 1: RandomForestRegressor
-      - Target Variable: Log-transformed.
-      - Evaluation Metrics: MSE, RMSE, MAE, R-squared, MAPE.
-      
+Implemented XGBoost with hyper parameter tuning
 
       
      
