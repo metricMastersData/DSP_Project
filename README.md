@@ -96,7 +96,7 @@ It involves specific Column Extraction, Duplicate data Removal and handling Miss
       - Pie charts of departure and arrival times by time of day.
       - Heatmap of the correlation matrix for numerical features.
 # 6. Model Training & Evaluation
-Implemented XGBoost with hyper parameter tuning
+Implemented XGBoost with hyper parameter tuning and cross validation.
 
       
      
