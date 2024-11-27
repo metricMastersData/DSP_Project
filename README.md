@@ -64,43 +64,53 @@ This project aims to predict flight fares using a comprehensive dataset. The pro
 It involves specific Column Extraction, Duplicate data Removal and handling Missing numerical Values through median imputation (numerical) and mode imputation (categorical).
 
 ## 3. Data Preprocessing
-  ### . Date and Time Conversion
+  #### . Date and Time Conversion
   - `flightDate` is converted to datetime format.
   - `travelDuration` is transformed from ISO 8601 format to total minutes.
- ### . Column Splitting and Transformation
+ #### . Column Splitting and Transformation
    - `segmentsAirlineName` is split to create `airlineName`
    - Number of stops is calculated.
    - Boolean columns are converted to integers.
    - `flightDate` is split into month, day, and year columns.
- ### . Mapping and Extraction
+ #### . Mapping and Extraction
    - Airport codes are mapped to names and cities using a dictionary.
    - First and last segments of arrival and departure times are extracted.
    - Epoch time is converted to datetime for detailed arrival and departure information.
 ## 4. Exploratory Data Analysis (EDA)
-  ### . Visualizations
+  #### . Visualizations
      - Histogram of total fares.
      - Bar chart of total fares by airline.
      - Scatter plot of total fare vs. travel duration.
      - Pie chart of the number of stops.
      - Bar charts of flight frequencies by origin and destination cities.
 ## 5. Feature Engineering
-  ### . New Features
+  #### . New Features
       - Time of day classification for arrivals and departures.
       - Season determination based on month.
       - Combined airport and city names.
-  ### . Optimization:
+  #### . Optimization:
       - Data types are optimized for memory usage.
       - Relevant columns are selected for prediction.
       - Categorical columns are encoded using one-hot encoding.
       - Additional Visualizations:
       - Pie charts of departure and arrival times by time of day.
       - Heatmap of the correlation matrix for numerical features.
-### 6. Model Training & Evaluation
-Implemented XGBoost with hyper parameter tuning and cross validation.
+## 6. Model Training & Evaluation
+  #### Model 1 - XGB with Hyperparameter Tuning
+       - The dataset was split into features `(X)` and target `(y)`, with a random sample used for training and testing.
+       - Hyperparameter tuning was performed using `RandomizedSearchCV`, and the best parameters were identified.
+       - The XGBoost model was trained with these optimal parameters, and cross-validation was conducted to assess stability.
+       - Key evaluation metrics were calculated, and cross-validation MSE scores were printed.
+  #### Handling Skewness and Outliers
+       - Skewness of totalFare was calculated, and outliers were identified using the IQR method.
+       - Outliers were capped to mitigate their impact, and the distribution was normalized.
+       - Summary statistics of totalFare were printed after outlier treatment.
+  #### Retraining XGB and Cross-Validation After Handling Outliers
+       - The XGBoost model was retrained after outlier treatment.
+       - Cross-validation was performed again, and key evaluation metrics were recalculated.
 
-      
+## 7. Metrics Analysis
+The model is observed to demonstrate good performance with an R-squared value of 0.80, indicating that it explains approximately 80% of the variance in the target variable. The Mean Squared Error (MSE) and Mean Absolute Error (MAE) suggest that the model’s predictions are reasonably accurate, with consistent cross-validation MSE scores further supporting its reliability.    
      
-    
- 
 
 *Raw csv datasets available in **master** branch.
