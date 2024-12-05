@@ -109,8 +109,7 @@ It involves specific Column Extraction, Duplicate data Removal and handling Miss
        - The XGBoost model was retrained after outlier treatment.
        - Cross-validation was performed again, and key evaluation metrics were recalculated.
 
-## 7. Metrics Analysis
-The model is observed to demonstrate good performance with an R-squared value of 0.80, indicating that it explains approximately 80% of the variance in the target variable. The Mean Squared Error (MSE) and Mean Absolute Error (MAE) suggest that the model’s predictions are reasonably accurate, with consistent cross-validation MSE scores further supporting its reliability.    
-     
+## 7. Project Analysis
+The analysis compares two models for predicting flight fares. The initial XGBoost model had better performance than the Random Forest regressor. After outlier handling, XGBoost's performance further improved. The final XGBoost model showed good performance with an RMSE of 91.58, an R-squared of 0.76, and consistent cross-validation scores. The model was considered reliable in predicting flight fares within a reasonable range of error.
 
 *Raw csv datasets available in **master** branch.
